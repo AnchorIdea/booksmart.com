@@ -1,0 +1,355 @@
+
+
+body {
+    background: #F5F4F2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(bottom, #FFF, #F5F4F2);
+    background: -moz-linear-gradient(bottom, #FFF, #F5F4F2);
+    background: -o-linear-gradient(bottom, #FFF, #F5F4F2);
+    background: linear-gradient(to bottom, #FFF, #F5F4F2);  
+    margin: 0;
+}
+
+h1, h2, h3, h4, p {
+	font-weight: initial;
+}
+
+p {
+	font-family: 'IM Fell DW Pica', serif;
+}
+
+.nav {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    background-color: #f2f2f2;
+    border-right: 2px solid #f2f2f2;
+}
+
+.navItem {
+    padding-left: 12px;
+    height: calc(100vh/21);
+    width: 40px;
+    border-top: 2px solid #f2f2f2;
+    background: #fbfbfb;
+}
+
+.fa-arrow-down {
+    margin-top: 10px;
+}
+
+.navCurrent {
+    color: #8ec1ea !important;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+.date {
+    margin-left: 18px;
+    margin-top: 3.4vh;
+    margin-bottom: 4vh;
+    width: 2px;
+    word-wrap: break-word;
+}
+
+.date .fa {
+    font-size: 1.4vh;
+    color: #8ec1ea;
+    margin: 0;
+    opacity: 0.5;
+}
+
+.date p {
+    padding-left: 2px;
+    font-size: 1.8vh;
+    color: #aaa;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+.navItem .fa {
+    margin-top: 5vh;
+    margin-left: 3px;
+    font-size: 20px;
+    color: #ee735d;
+    opacity: 0.7;
+}
+
+.search {
+    background: #f4f4f4;
+    height: 100%;
+}
+
+
+.navItem p {
+    padding-top: 1.45vh;
+    margin: 0;
+    font-size: 1.4vh;
+    color: #d0d9e0;
+}
+
+.mobileNav {
+    z-index: 9998;
+    position: fixed;
+    top: 2.3vw;
+    left: 3vw;
+    display: none;
+}
+
+input[type=checkbox] {
+    position: fixed;
+    top: 2.6vw;
+    left: 2.6vw;
+    z-index: 9999;
+    opacity: 0;
+}
+
+input[type=checkbox]:checked ~ .mobileNavContainer {
+    display: block;
+}
+
+.mobileNav > label > i {
+    font-size: 30px;
+    color: #aaa;
+    background: rgba(254,254,254,0.8);
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 1px 2px 3px -1px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 2px 3px -1px rgba(0,0,0,0.3);
+    box-shadow: 1px 2px 3px -1px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+.mobileNavContainer {
+    display: none;
+}
+
+.mobileYear, .mobileMonthContainer {
+    text-align: center;
+    width: 200px;
+}
+
+.mobileYear {
+    border: 1px solid #ccc;
+    background: #444;
+    border-radius: 5px 5px 0 0;
+}
+
+.mobileYearText {
+    display: inline-block;
+    color: #eee;
+    font-size: 23px;
+}
+
+.mobileYearText, .mobileMonth {
+    margin: 5px;
+}
+
+.mobileYear i {
+    display: inline-block;
+    font-size: 20px;
+    color: #8ec1ea;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.fa-chevron-left {
+    float: left;
+}
+
+.fa-chevron-right {
+    float: right;
+}
+
+.mobileMonthContainer {
+    background: #fefefe;
+    margin-top: -5px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+}
+
+.mobileMonth {
+    color: #8ec1ea;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.mobileMonthContainer > a:link {
+    text-decoration: none;
+}
+
+.nav > a:link {
+    text-decoration: none;
+}
+
+.title {
+	font-family: 'Seaweed Script', cursive;
+	text-align: center;
+	line-height: 80%;
+	font-size: 45px;
+	color: #333;
+	margin: 15px 0 10px 20px;
+}
+
+.heading {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.social-icons {
+	padding-left: 35px;
+	text-align: center;
+}
+
+.fa-2 {
+	font-size: 1.4em;
+	padding-right: 15px;
+	color: #4499dd;
+    cursor: pointer;
+}
+
+span .fa-2 {
+    color: #ee735d;
+}
+
+.intro {
+	font-size: 19px;
+	width: 80vw;
+	margin: -10px 9.5vw 0 10.5vw;
+	text-align: center;
+	opacity: 0.6;
+}
+
+.intro span {
+	font-family: 'IM Fell DW Pica SC', serif;
+	font-size: 28px;
+}
+
+.divider {
+	width: 6px;
+	height: 6px;
+	background: #444;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+.divider2 {
+    width: 60vw;
+    height: 2px;
+    margin: 50px auto 50px;
+    background: #ddd;
+}
+
+.blogContainer {
+	width: 70vw;
+	margin-left: 15vw;
+	margin-right: 15vw;
+}
+
+.postHeading, .postDate {
+	letter-spacing: 1px;
+	text-align: center;
+	color: #333;
+}
+
+.postHeading {
+	font-family: 'IM Fell DW Pica SC', serif;
+	margin: 15px 0 5px;
+}
+
+.postDate {
+	line-height: 60%;
+	margin-top: 5px;
+}
+
+.blogMedia {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* There is a 15% transparency set on post images to match the contrast
+of the site design, if you wish to remove that, simply comment out or delete the
+"opacity: 0.85;" line below.*/
+.blogMedia img{
+    width: 70vw;
+    border-radius: 30px;
+    background-size: contain;
+    box-shadow: 3px 6px 15px -20px rgba(0,0,0,1);
+    opacity: 0.85;
+}
+
+.postContent p{
+    text-indent: 30px;
+    font-size: 21px;
+    line-height: 1.6;
+    font-weight: lighter;
+    color: #555;
+    font-family: 'IM Fell English', serif;
+}
+
+.postContent p #i, .postContent .signature {
+    font-style: italic;
+}
+
+.postContent .signature {
+    font-size: 35px;
+    margin-left: 40px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+    .blogContainer {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .blogMedia img {
+        width: 90vw;
+    }
+    .divider2, .nav {
+        display: none;
+    }
+    .mobileNav {
+        display: initial !important;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .postContent p {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-height: 1100px) {
+    .navItem p, .date p {
+        font-size: 1.6vh;
+    }
+}
+
+@media only screen and (max-height: 850px) {
+    .navItem p{
+        font-size: 2.1vh;
+    }
+    .date p{
+        font-size: 2.4vh;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .nav {
+        display: none;
+    }
+    
+    .mobileNav {
+        display: initial !important;
+    }
+}
+
